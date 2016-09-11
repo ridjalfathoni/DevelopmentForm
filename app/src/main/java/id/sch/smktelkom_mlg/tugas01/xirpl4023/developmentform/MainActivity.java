@@ -58,7 +58,8 @@ public class MainActivity extends AppCompatActivity {
                 if (cbLP.isChecked ()) hasil += cbLP.getText () + "\n";
                 if (cbMW.isChecked ()) hasil += cbMW.getText () + "\n";
                 if (cbNG.isChecked ()) hasil += cbNG.getText () + "\n";
-                if (PR.isChecked ()) {
+                if (PR.isChecked ())
+                {
                     kelamin1 = PR.getText ().toString ();
                 } else if (LK.isChecked ()) ;
                 {
