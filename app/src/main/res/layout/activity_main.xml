@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -79,6 +82,7 @@
             android:text="Jenis Kelamin"/>
 
         <RadioGroup
+            android:id="@+id/radioGroupJK"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
@@ -103,28 +107,28 @@
             android:layout_height="53dp">
 
             <TextView
-                android:id="@+id/textView2AV"
+                android:id="@+id/textViewAV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Android Version"/>
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkBoxLP"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/textView2AV"
+                android:layout_below="@+id/textViewAV"
                 android:checked="false"
                 android:text="Lolipop"/>
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/checkBoxMW"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignTop="@+id/checkBox"
-                android:layout_toEndOf="@+id/checkBox"
-                android:layout_toRightOf="@+id/checkBox"
+                android:layout_alignTop="@+id/checkBoxLP"
+                android:layout_toEndOf="@+id/checkBoxLP"
+                android:layout_toRightOf="@+id/checkBoxLP"
                 android:checked="false"
                 android:text="Marshmellow"/>
 
@@ -132,9 +136,9 @@
                 android:id="@+id/checkBoxNG"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/checkBox2"
-                android:layout_toEndOf="@+id/checkBox2"
-                android:layout_toRightOf="@+id/checkBox2"
+                android:layout_alignBottom="@+id/checkBoxMW"
+                android:layout_toEndOf="@+id/checkBoxMW"
+                android:layout_toRightOf="@+id/checkBoxMW"
                 android:checked="false"
                 android:text="Nougat"/>
         </RelativeLayout>
@@ -145,15 +149,17 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textViewKota"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Text"/>
+                android:text="Asal Kota"/>
 
             <Spinner
-                android:id="@+id/spinner"
+                android:id="@+id/spinnerKota"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:entries="@array/kota"
+                android:spinnerMode="dropdown"/>
 
             <Button
                 android:id="@+id/buttonOK"
@@ -177,3 +183,4 @@
     </LinearLayout>
 
 </RelativeLayout>
+</ScrollView>
